@@ -13,6 +13,22 @@
       }
     ]
   },
+   {
+    "categoryName": "String Manipulation",
+    "snippets": [
+      {
+        "title": "Count Vowels",
+        "description": "Count the number of vowels in a string.",
+        "code": [
+          "const countVowels = str => (str.match(/[aeiou]/gi) || []).length;",
+          "",
+          "// Usage:",
+          "const vowels = countVowels('hello')",
+          "console.log(vowels); // Output: 2"
+        ],
+        "tags": ["javascript", "string", "vowels", "utility"],
+        "author": "mfullaty"
+      },
   {
     "categoryName": "Array Manipulation",
     "snippets": [
