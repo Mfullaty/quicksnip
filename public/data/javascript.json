@@ -112,6 +112,150 @@
         "author": "dostonnabotov"
       },
       {
+        "title": "Convert to camelCase",
+        "description": "Converts a given string to camelCase",
+        "code": [
+          "const toCamelCase = (str) => str.toLowerCase().replace(/[-_\s]+(.)?/g, (_, c) => c ? c.toUpperCase() : '');",
+          "",
+          "// Usage:",
+          "console.log(toCamelCase('this is a camel-case string')); // Output: 'thisIsACamelCaseString'"
+        ],
+        "tags": ["javascript", "string", "camelcase", "utility"],
+        "author": "mfullaty"
+      },
+      {
+        "title": "Repeat String",
+        "description": "Repeat a string up to a given number times",
+        "code": [
+          "const repeatString = (str, times) => str.repeat(times);",
+          "",
+          "// Usage:",
+          "console.log(repeatString('hello ', 3)); // Output: 'hello hello hello'"
+        ],
+        "tags": ["javascript", "string", "repeat", "utility"],
+        "author": "mfullaty"
+      },
+      {
+        "title": "Extract numbers from a string",
+        "description": "Extract Numbers from a given string",
+        "code": [
+          "const extractNumbers = (str) => str.match(/\d+/g) || [];",
+          "",
+          "// Usage:",
+          "console.log(extractNumbers('hello123')); // Output: '123'"
+        ],
+        "tags": ["javascript", "string", "extract", "utility"],
+        "author": "mfullaty"
+      },
+      {
+        "title": "Convert to Title Case",
+        "description": "Convert a given string to title case",
+        "code": [
+          "const toTitleCase = (str) => str.replace(/\w\S*/g, w => w[0].toUpperCase() + w.slice(1));",
+          "",
+          "// Usage:",
+          "console.log(toTitleCase('this is to title case')); // Output: 'This Is To Title Case'"
+        ],
+        "tags": ["javascript", "string", "convert", "utility"],
+        "author": "mfullaty"
+      },
+      {
+        "title": "Replace All",
+        "description": "Replace words with given words in a string",
+        "code": [
+          "const replaceAll = (str, search, rep) => str.split(search).join(rep);",
+          "",
+          "// Usage:",
+          "console.log(replaceAll('Hello world', 'world', 'planet') ); // Output: 'Hello planet'"
+        ],
+        "tags": ["javascript", "string", "replace", "utility"],
+        "author": "mfullaty"
+      },
+      {
+        "title": "Remove Non-Alphanumerics"
+        "description": "Remove all non Alphanumeric charachters from a string",
+        "code": [
+          "const removeNonAlphanumeric = str => str.replace(/[^a-z0-9]/gi, '');",
+          "",
+          "// Usage:",
+          "console.log(removeNonAlphanumeric('Hello, world!') ); // Output: 'Helloworld'"
+        ],
+        "tags": ["javascript", "string", "remove", "utility"],
+        "author": "mfullaty"
+      },
+      {
+        "title": "Get file extention"
+        "description": "Get file extention from a given file name",
+        "code": [
+          "const getFileExtension = (filename) => filename.split('.').pop();",
+          "",
+          "// Usage:",
+          "console.log(getFileExtension('file.zip')); // Output: 'zip'"
+        ],
+        "tags": ["javascript", "string", "get", "utility"],
+        "author": "mfullaty"
+      },
+      {
+        "title": "Get file extention"
+        "description": "Get file extention from a given file name",
+        "code": [
+          "const getFileExtension = (filename) => filename.split('.').pop();",
+          "",
+          "// Usage:",
+          "console.log(getFileExtension('file.zip')); // Output: 'zip'"
+        ],
+        "tags": ["javascript", "string", "get", "utility"],
+        "author": "mfullaty"
+      },
+      {
+        "title": "Remove Duplicate Words"
+        "description": "Remove all duplicate words from a given string",
+        "code": [
+          "const removeDuplicateWords = (str) => [...new Set(str.split(' '))].join(' ');",
+          "",
+          "// Usage:",
+          "console.log(removeDuplicateWords('This is is a string with with duplicate words words')); // Output: 'This is a string with duplicate words'"
+        ],
+        "tags": ["javascript", "string", "remove", "duplicate", "utility"],
+        "author": "mfullaty"
+      },
+      {
+        "title": "Remove html tags <></>"
+        "description": "Remove html tags from a given string",
+        "code": [
+          "const removeHtmlTags = str => str.replace(/<[^>]*>/g, '');",
+          "",
+          "// Usage:",
+          "console.log(removeHtmlTags('<p>hello world</p>')); // Output: 'hello world'"
+        ],
+        "tags": ["javascript", "string", "remove", "html", "tags", "utility"],
+        "author": "mfullaty"
+      },
+      {
+        "title": "Swap Case"
+        "description": "Swaps lowercase to uppercase and uppercase to lowercase strings",
+        "code": [
+          "const swapCase = str => str.replace(/[a-zA-Z]/g, c => c === c.toLowerCase() ? c.toUpperCase() : c.toLowerCase());",
+          "",
+          "// Usage:",
+          "console.log(swapCase('Hello World, HELLO YOU')); // Output: 'hELLO wORLD, hello you'"
+        ],
+        "tags": ["javascript", "string", "swap", "case", "swapcase", "utility"],
+        "author": "mfullaty"
+      },
+      {
+        "title": "Find the longest word"
+        "description": "Find the longest word in a string",
+        "code": [
+          "const findLongestWord = str => str.split(' ').reduce((a, b) => b.length > a.length ? b : a, '');",
+          "",
+          "// Usage:",
+          "console.log(findLongestWord('this is a string withAReallyLongWord')); // Output: 'withAReallyLongWord'"
+        ],
+        "tags": ["javascript", "string", "find", "longWord", "long", "utility"],
+        "author": "mfullaty"
+      },
+      {
         "title": "Reverse String",
         "description": "Reverses the characters in a string.",
         "code": [
